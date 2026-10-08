@@ -1,9 +1,10 @@
 from sqlalchemy import *
 
 from sqlalchemy.orm import *
-#DATABASE_URL = "postgresql+psycopg2://postgres:admin@localhost:5432/nmo"
-DATABASE_URL = "sqlite:///db.sql"
+
+DATABASE_URL = "sqlite:///app.db"
 engine = create_engine(DATABASE_URL, echo=False)
+
 class Base(DeclarativeBase):
     """Базовый класс моделей."""
 

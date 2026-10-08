@@ -3,9 +3,7 @@ import random
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-from models import (all_users, find_user, user_by_login, login_exists,
-                    add_user, update_user, delete_user,
-                    unlock_user, register_fail, reset_attempts)
+from models import *
 
 CURRENT_USER = None
 CURRENT_EDIT = None
